@@ -1,0 +1,38 @@
+GROUP MEMBERS -
+1.)JAYASHREE PRABUNATHAN
+2.)REMYA MOHANAN
+3.)SARIKA PADMASHALI
+
+The header responses are as below :
+
+1.)Referer:The HTTP referer is HTTP header field that identifies the address of the webpage that linked to the resource being requested. By checking the referer ,the new webpage can see where the request originated .
+
+2.)Location: The HTTP Location header field is returned in response from an HTTP server under two circumstances:
+ a) URL redirection - To ask the web browser to load a different webpage.The location header should be sent with an HTTP status code 3xx. It is passed as a part of the response by a web server when the requested URI has :
+-Moved temporarily 
+-Moved permanently(in our case - GET / HTTP/1.1 request to apple.com) or
+-Processed a request Example : a POSTed form and provided the request at a different URI.
+ b.)To provide information about the location of a newly created resource it is sent along with the HTTP status code 201 or 202.
+
+3.) Content-Length: This header gives the size of the entity-body that has been sent by the server to the GET request of the client .Content-Length greater than or equal to zero is a valid value .This field indicates the transfer length of the message body .
+
+4.)Server:This indicates the software used by the origin server to handle the request.This field can contain multiple products and subproducts of the software used by the server.Example:Apache.
+
+5.)Accept-Ranges: This header indicates that the server accepts range requests in bytes for a resource.
+ Example - ÒAccept-Ranges:Ó acceptable ranges.
+Origin servers that accept byte range requests can send Accept-Ranges: bytes . Client may generate the byte-range request without having received this header for the resource involved. Servers that do not accept any kind of range request may send Accept-Ranges-none to indiciate the client to not attempt any kind of range request.
+
+6.)Content-Type:This header indicates the MIME type of the content requested.A media type is a two-part identifier for file formats and format contents transmitted on the Internet.
+ 
+7.)Cache-Control: It use to specify the directives that all the caching mechanisms should obey during the request- response session .The directives specifies a behaviour to prevent caches from interfering with the request-response  chain.These directives override the default caching algorithms.
+
+8.)Expires: This entity-header field gives the date/time after which the response is considered stale .A stale cache entry may not be normally returned by a cache unless it is not validated with the origin server for the recent copy .
+
+9.)Date:This represents the date/time at which the message was originated.
+
+10.)Connection: This header allows the sender to specify options that are desired for that particular connection .In the response which we got , Connection: keep-alive  indicates that the connection should be kept persistent even after the request is complete and Connection:close indicates to close the connection after the request is complete.
+
+
+
+References:  1.]https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
+	     2.]https://en.wikipedia.org/wiki/	
